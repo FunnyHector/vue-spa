@@ -15,6 +15,7 @@
       </div>
       <!-- `mt-5` applies a margin-top of 5 -->
       <v-btn fab class="mt-5 brown darken-4">
+        <!-- Just put the icon name in <v-icon> tag -->
         <v-icon large color="white">expand_more</v-icon>
       </v-btn>
     </v-layout>
