@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0-rc.1",
+    "material-design-icons-iconfont": "^4.0.5",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuetify": "^1.5.5",
@@ -41,7 +42,8 @@
   },
   "prettier": {
     "tabWidth": 2,
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 120
   },
   "postcss": {
     "plugins": {

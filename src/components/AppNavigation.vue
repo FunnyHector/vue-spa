@@ -6,13 +6,7 @@
     content sizing. When the side drawer slides out then the content on the screen will adjust accordingly. -->
     <!-- property `dark` applies the dark theme variant to the toolbar. This inverts all the text so instead of being
     black they are now white -->
-    <v-navigation-drawer
-      app
-      dark
-      disable-resize-watcher
-      v-model="drawer"
-      class="brown lighten-2"
-    >
+    <v-navigation-drawer app dark disable-resize-watcher v-model="drawer" class="brown lighten-2">
       <v-list>
         <template v-for="(item, index) in items">
           <v-list-tile :key="index">
@@ -26,10 +20,7 @@
     </v-navigation-drawer>
 
     <v-toolbar app dark color="brown darken-4">
-      <v-toolbar-side-icon
-        class="hidden-md-and-up"
-        @click="drawer = !drawer"
-      ></v-toolbar-side-icon>
+      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <!-- This spacer is displayed when it's small devices, so that side icon and app title on two sides and balanced -->
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-title>{{ appTitle }}</v-toolbar-title>

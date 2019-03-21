@@ -1,3 +1,6 @@
+// https://github.com/vuetifyjs/vuetify/issues/2083#issuecomment-427977633
+import 'material-design-icons-iconfont/dist/material-design-icons.css';
+
 import '@babel/polyfill';
 import Vue from 'vue';
 import './plugins/vuetify';
