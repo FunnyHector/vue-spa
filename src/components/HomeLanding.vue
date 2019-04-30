@@ -1,7 +1,7 @@
 <template>
   <!-- `fluid` property will extend the page to its full width -->
   <!-- `fill-height` property will automatically adjust the container to have a height of 100% of the screen -->
-  <v-container fluid fill-height class="home-hero">
+  <v-container fluid fill-height class="home-landing">
     <v-layout justify-center align-center column pa-5>
       <div class="display-4 font-weight-black white--text text-xs-center">
         HEALTHY MEALS
@@ -24,12 +24,12 @@
 
 <script>
 export default {
-  name: 'HomeHero'
+  name: 'HomeLanding'
 };
 </script>
 
 <style scoped>
-.home-hero {
+.home-landing {
   background: url('http://source.unsplash.com/0BhSKStVtdM');
   background-size: cover;
   width: 100%;

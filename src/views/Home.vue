@@ -1,19 +1,19 @@
 <template>
   <div>
-    <home-hero></home-hero>
+    <home-landing></home-landing>
     <home-details></home-details>
   </div>
 </template>
 
 <script>
-import HomeHero from '../components/HomeHero';
+import HomeLanding from '../components/HomeLanding';
 import HomeDetails from '../components/HomeDetails';
 
 export default {
   name: 'home',
   components: {
-    HomeDetails,
-    HomeHero
+    HomeLanding,
+    HomeDetails
   }
 };
 </script>
