@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HomeLanding from '../components/HomeLanding';
-import HomeDetails from '../components/HomeDetails';
-import HomePlans from '../components/HomePlans';
+import HomeLanding from '../components/home/Landing';
+import HomeDetails from '../components/home/Details';
+import HomePlans from '../components/home/Plans';
 
 export default {
   name: 'home',
