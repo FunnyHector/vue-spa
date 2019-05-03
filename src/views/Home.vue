@@ -16,7 +16,7 @@ export default {
   components: {
     HomeLanding,
     HomeDetails,
-    HomePlans,
+    HomePlans
   }
 };
 </script>

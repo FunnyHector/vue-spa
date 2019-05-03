@@ -23,11 +23,13 @@
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <!-- This spacer is displayed when it's small devices, so that side icon and app title on two sides and balanced -->
       <v-spacer class="hidden-md-and-up"></v-spacer>
-      <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
-      <v-btn flat class="hidden-sm-and-down">Menu</v-btn>
+      <router-link to="/">
+        <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
+      </router-link>
+      <v-btn flat to="/menu" class="hidden-sm-and-down">Menu</v-btn>
       <v-spacer class="hidden-sm-and-down"></v-spacer>
-      <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
-      <v-btn color="brown lighten-3" class="hidden-sm-and-down">JOIN</v-btn>
+      <v-btn flat to="/signin" class="hidden-sm-and-down">SIGN IN</v-btn>
+      <v-btn to="/join" color="brown lighten-3" class="hidden-sm-and-down">JOIN</v-btn>
     </v-toolbar>
   </span>
 </template>
@@ -43,10 +45,20 @@ export default {
     return {
       appTitle: 'Meal Prep',
       drawer: false,
-      items: [{ title: 'Menu' }, { title: 'Sign In' }, { title: 'Join' }]
+      items: [
+        { title: 'Menu' },
+        { title: 'Profile' },
+        { title: 'Sign In' },
+        { title: 'Join' }
+      ]
     };
   }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+a {
+  color: white;
+  text-decoration: none;
+}
+</style>
